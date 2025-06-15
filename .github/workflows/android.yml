@@ -25,6 +25,10 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew assembleFdroid
 
+    - run: ls -l
+    - run: ls -l app
+    - run: ls -l app/fdroid
+
     - name: Upload ZIP
       uses: actions/upload-artifact@v4
       with:
