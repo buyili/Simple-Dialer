@@ -33,4 +33,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: dialer-fdroid-release.apk
-        path: app\fdroid\release\dialer-fdroid-release.apk
+        path: app\build\outputs\apk\fdroid\release\dialer-fdroid-release.apk
