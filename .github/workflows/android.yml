@@ -31,9 +31,10 @@ jobs:
     - run: ls -l app/build/outputs
     - run: ls -l app/build/outputs/apk
     - run: ls -l app/build/outputs/apk/fdroid
+    - run: ls -l app/build/outputs/apk/fdroid/release
 
     - name: Upload ZIP
       uses: actions/upload-artifact@v4
       with:
         name: buildZip
-        path: app\build
+        path: app/build
